@@ -28,3 +28,9 @@ Task 4: Compared || vs ?? for a display-name fallback scenario. Confirmed || tre
 **- Task five 5 : Built a single-expression loyalty points calculator using ternary + type conversion**
 
 Task 5: Built a single-expression loyalty points calculator using ternary + type conversion, ensuring string-to-number conversion happens before arithmetic in both branches to avoid string concatenation bugs. Reinforced operator precedence awareness in combined expressions.
+
+
+**- Task six 6 : Built an input sanitizer for a bank transfer form using isNaN() instead of truthy/falsy checks**
+
+
+Task 6: Built an input sanitizer for a bank transfer form using isNaN() instead of truthy/falsy checks. Learned why falsy checks (!Number(value)) are unreliable for validation — they wrongly flag legitimate values like "0" as invalid. Also added a positive-amount business rule as an edge case extension.

@@ -49,3 +49,15 @@ let bonusPoints = 50;
 let finalPoints = isPrimeMember ? (+basePoints) + bonusPoints : +basePoints;
 
 console.log(finalPoints);
+
+
+// Task six 6 : Built an input sanitizer for a bank transfer form using isNaN() instead of truthy/falsy checks
+
+let enteredAmount = "45ab";
+
+if (isNaN(enteredAmount) || (+enteredAmount) <= 0){
+    console.log("The transaction amount is unvalid");
+}else {
+    let newAmount = (+enteredAmount)
+    console.log(`Transaction completed ${newAmount} transfered`)
+}
