@@ -19,7 +19,7 @@ console.log(typeof deliveryAddress); // = object : It's a well known bug in Java
 console.log(typeof isPrime); // undefined
 
 
-// Task two 3 : null vs 0 comparison inconsistency
+// Task three 3 : null vs 0 comparison inconsistency
 
 let customerAge = null;
 
@@ -27,7 +27,7 @@ console.log(customerAge == 0);   // false print result of loose equality check
 console.log(customerAge >= 0);   // true print result of relational check
 
 
-// Task two 4 : Compared || vs ?? for a display-name fallback scenario
+// Task four 4 : Compared || vs ?? for a display-name fallback scenario
 
 javascript
 let nickName = "";
@@ -40,7 +40,7 @@ console.log(displayNameOld);  // real_user123
 console.log(displayNameNew);  // ""
 
 
-// Task two 5 : Built a single-expression loyalty points calculator using ternary + type conversion
+// Task five 5 : Built a single-expression loyalty points calculator using ternary + type conversion
 
 let basePoints = "120";
 let isPrimeMember = true;

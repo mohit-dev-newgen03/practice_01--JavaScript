@@ -15,16 +15,16 @@ Practiced type conversion using unary (+) operator on string inputs (order total
 Task 2: Explored typeof behavior across number, null, and undefined for a delivery-app validation scenario. Confirmed and explained the classic typeof null === "object" bug — a legacy JS quirk kept for backward compatibility, not a "real" object type.
 
 
-**- Task two 3 : null vs 0 comparison inconsistency**
+**- Task three 3 : null vs 0 comparison inconsistency**
 
 Task 3: Explored the classic null vs 0 comparison inconsistency in JS. Learned that == treats null as special-cased and only loosely equal to undefined, while relational operators (>=) convert null to 0 numerically — same value, two different rule systems.
 
 
-**- Task two 4 : Compared || vs ?? for a display-name fallback scenario**
+**- Task four 4 : Compared || vs ?? for a display-name fallback scenario**
 
 Task 4: Compared || vs ?? for a display-name fallback scenario. Confirmed || treats any falsy value (including intentional empty strings) as "missing" and overrides it, while ?? only triggers on null/undefined — explains why ?? was added to JS to fix this exact class of business logic bug.
 
 
-**- Task two 5 : Built a single-expression loyalty points calculator using ternary + type conversion**
+**- Task five 5 : Built a single-expression loyalty points calculator using ternary + type conversion**
 
 Task 5: Built a single-expression loyalty points calculator using ternary + type conversion, ensuring string-to-number conversion happens before arithmetic in both branches to avoid string concatenation bugs. Reinforced operator precedence awareness in combined expressions.
