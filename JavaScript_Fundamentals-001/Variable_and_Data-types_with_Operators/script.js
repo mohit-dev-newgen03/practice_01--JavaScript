@@ -38,3 +38,14 @@ let displayNameNew = nickName ?? userName ;
 
 console.log(displayNameOld);  // real_user123
 console.log(displayNameNew);  // ""
+
+
+// Task two 5 : Built a single-expression loyalty points calculator using ternary + type conversion
+
+let basePoints = "120";
+let isPrimeMember = true;
+let bonusPoints = 50;
+
+let finalPoints = isPrimeMember ? (+basePoints) + bonusPoints : +basePoints;
+
+console.log(finalPoints);

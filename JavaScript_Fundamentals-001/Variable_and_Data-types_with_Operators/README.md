@@ -23,3 +23,8 @@ Task 3: Explored the classic null vs 0 comparison inconsistency in JS. Learned t
 **- Task two 4 : Compared || vs ?? for a display-name fallback scenario**
 
 Task 4: Compared || vs ?? for a display-name fallback scenario. Confirmed || treats any falsy value (including intentional empty strings) as "missing" and overrides it, while ?? only triggers on null/undefined — explains why ?? was added to JS to fix this exact class of business logic bug.
+
+
+**- Task two 5 : Built a single-expression loyalty points calculator using ternary + type conversion**
+
+Task 5: Built a single-expression loyalty points calculator using ternary + type conversion, ensuring string-to-number conversion happens before arithmetic in both branches to avoid string concatenation bugs. Reinforced operator precedence awareness in combined expressions.
