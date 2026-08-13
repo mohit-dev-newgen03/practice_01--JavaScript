@@ -25,3 +25,16 @@ let customerAge = null;
 
 console.log(customerAge == 0);   // false print result of loose equality check
 console.log(customerAge >= 0);   // true print result of relational check
+
+
+// Task two 4 : Compared || vs ?? for a display-name fallback scenario
+
+javascript
+let nickName = "";
+let userName = "real_user123";
+
+let displayNameOld = nickName || userName ;
+let displayNameNew = nickName ?? userName ;
+
+console.log(displayNameOld);  // real_user123
+console.log(displayNameNew);  // ""

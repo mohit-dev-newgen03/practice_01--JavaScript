@@ -18,3 +18,8 @@ Task 2: Explored typeof behavior across number, null, and undefined for a delive
 **- Task two 3 : null vs 0 comparison inconsistency**
 
 Task 3: Explored the classic null vs 0 comparison inconsistency in JS. Learned that == treats null as special-cased and only loosely equal to undefined, while relational operators (>=) convert null to 0 numerically — same value, two different rule systems.
+
+
+**- Task two 4 : Compared || vs ?? for a display-name fallback scenario**
+
+Task 4: Compared || vs ?? for a display-name fallback scenario. Confirmed || treats any falsy value (including intentional empty strings) as "missing" and overrides it, while ?? only triggers on null/undefined — explains why ?? was added to JS to fix this exact class of business logic bug.
