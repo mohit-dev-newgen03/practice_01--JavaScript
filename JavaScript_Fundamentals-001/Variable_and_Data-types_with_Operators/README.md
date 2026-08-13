@@ -13,3 +13,8 @@ Practiced type conversion using unary (+) operator on string inputs (order total
 **- Task two 2 : typeof operator behavior**
 
 Task 2: Explored typeof behavior across number, null, and undefined for a delivery-app validation scenario. Confirmed and explained the classic typeof null === "object" bug — a legacy JS quirk kept for backward compatibility, not a "real" object type.
+
+
+**- Task two 3 : null vs 0 comparison inconsistency**
+
+Task 3: Explored the classic null vs 0 comparison inconsistency in JS. Learned that == treats null as special-cased and only loosely equal to undefined, while relational operators (>=) convert null to 0 numerically — same value, two different rule systems.
