@@ -8,3 +8,8 @@ Thank you 🙇‍♂️
 **- Task one 1 : Variables + Type Conversion**
 
 Practiced type conversion using unary (+) operator on string inputs (order total & discount coupon), calculated percentage-based discount logic for a checkout scenario. Reinforced: + does NOT always mean addition, and only -, *, / force numeric conversion automatically.
+
+
+**- Task two 2 : typeof operator behavior**
+
+Task 2: Explored typeof behavior across number, null, and undefined for a delivery-app validation scenario. Confirmed and explained the classic typeof null === "object" bug — a legacy JS quirk kept for backward compatibility, not a "real" object type.
