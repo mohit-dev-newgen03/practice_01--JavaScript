@@ -83,3 +83,16 @@ switch (userRegion) {
     default :
         console.log("Unknown region - flag for review");    
 }
+
+
+// Task eight 8 : Built a final-price resolver chaining
+
+let salePrice = null;
+let regularPrice = "-15";
+
+let truePrice = salePrice ?? regularPrice;
+let correctPrice = Number(truePrice);
+
+let finalPrice = correctPrice <= 0 ? 0 : correctPrice;
+
+console.log(finalPrice);

@@ -39,3 +39,8 @@ Task 6: Built an input sanitizer for a bank transfer form using isNaN() instead 
 **- Task seven 7 : Built a shipping cost calculator using switch statement for a region-based e-commerce checkout system**
 
 Task 7: Built a shipping cost calculator using switch statement for a region-based e-commerce checkout system. Confirmed switch uses strict (===) comparison internally. Learned that case blocks without {} braces share the same scope — reusing a let variable name across cases would throw a SyntaxError.
+
+
+**- Task eight 8 : Built a final-price resolver chaining**
+
+Task 8: Built a final-price resolver chaining ?? (null fallback), explicit Number() conversion, and a ternary safety guard against negative prices. Key bug caught: converting the original fallback variable instead of the ??-resolved variable — a subtle but real "looks right by coincidence" mistake worth double-checking in multi-step logic.
