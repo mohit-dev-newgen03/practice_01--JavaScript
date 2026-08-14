@@ -34,3 +34,8 @@ Task 5: Built a single-expression loyalty points calculator using ternary + type
 
 
 Task 6: Built an input sanitizer for a bank transfer form using isNaN() instead of truthy/falsy checks. Learned why falsy checks (!Number(value)) are unreliable for validation — they wrongly flag legitimate values like "0" as invalid. Also added a positive-amount business rule as an edge case extension.
+
+
+**- Task seven 7 : Built a shipping cost calculator using switch statement for a region-based e-commerce checkout system**
+
+Task 7: Built a shipping cost calculator using switch statement for a region-based e-commerce checkout system. Confirmed switch uses strict (===) comparison internally. Learned that case blocks without {} braces share the same scope — reusing a let variable name across cases would throw a SyntaxError.

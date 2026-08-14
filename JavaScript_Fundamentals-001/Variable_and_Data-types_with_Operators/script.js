@@ -61,3 +61,25 @@ if (isNaN(enteredAmount) || (+enteredAmount) <= 0){
     let newAmount = (+enteredAmount)
     console.log(`Transaction completed ${newAmount} transfered`)
 }
+
+
+// Task seven 7 : Built a shipping cost calculator using switch statement for a region-based e-commerce checkout system
+
+let userRegion = "national";
+
+switch (userRegion) {
+    case "international":
+        let shipingCostInternational = 250;
+        console.log(`Your shiping cost is ${shipingCostInternational}`);
+        break;
+    case "national":
+        let shipingCostNational = 100;
+        console.log(`Your shiping cost is ${shipingCostNational}`); 
+        break;
+    case "local":
+        let shipingCostLocal = 40;
+        console.log(`Your shiping cost is ${shipingCostLocal}`); 
+        break;    
+    default :
+        console.log("Unknown region - flag for review");    
+}
