@@ -38,3 +38,13 @@ function greetDeclared(){
 const greetExpression = function(){
     console.log("Hello function expression");       // Uncaught ReferenceError: Cannot access 'greetExpression' before initialization
 };
+
+
+// Task 4 : Default Parameters (real business defaults)
+
+function calculateTotal(price, taxRate = 8){
+    return price + (price * taxRate / 100)
+};
+
+console.log(calculateTotal(2500, 50));
+console.log(calculateTotal(2500));
