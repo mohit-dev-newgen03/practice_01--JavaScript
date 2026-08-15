@@ -48,3 +48,23 @@ function calculateTotal(price, taxRate = 8){
 
 console.log(calculateTotal(2500, 50));
 console.log(calculateTotal(2500));
+
+
+// Task 5 : Debugging Mindset (find the bug, don't just fix blindly)
+
+javascript
+function calculateAverage(order1, order2, order3) {
+  let total = order1 + order2 + order3;
+  console.log( total / 2); // answer is 300 but we need here 200 because the average of 3 values are always got by deviding it through 3 counts
+  // here is the main problem and we can just fix it through changing the devisible to 3  
+}
+
+
+javascript
+function calculateAverage(order1, order2, order3) {
+  let total = order1 + order2 + order3;
+  let average = total / 3;
+  return average;
+}
+
+console.log(calculateAverage(100, 200, 300));   // 200 final answer

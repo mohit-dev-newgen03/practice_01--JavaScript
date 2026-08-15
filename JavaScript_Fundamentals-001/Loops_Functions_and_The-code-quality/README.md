@@ -21,3 +21,8 @@ Task 3: Demonstrated hoisting difference between function declarations and funct
 **Task 4 : Default Parameters (real business defaults)**
 
 Task 3: Demonstrated hoisting difference between function declarations and function expressions. Confirmed function declarations are fully hoisted (usable before their line), while function expressions assigned via const/let are only name-hoisted and sit in the Temporal Dead Zone (TDZ) until their line executes — calling early throws a ReferenceError, not undefined.
+
+
+**Task 5 : Debugging Mindset (find the bug, don't just fix blindly)**
+
+Task 5: Debugged a broken average-calculation function using console.log to observe actual vs expected output before fixing. Confirmed the bug (dividing by 2 instead of 3, the actual count of values) through direct observation rather than blind guessing — reinforced hypothesis-test-confirm debugging workflow.
