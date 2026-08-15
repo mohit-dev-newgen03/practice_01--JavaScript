@@ -68,3 +68,13 @@ function calculateAverage(order1, order2, order3) {
 }
 
 console.log(calculateAverage(100, 200, 300));   // 200 final answer
+
+
+// Task 6 : Refactor "Ninja Code" into Clean Code
+
+function biggestScore (score1, score2, score3){
+    let firstBigScore = score1 > score2 ? score1 : score2 ; // finding the higher of the first two scores
+    let finalBigScore = firstBigScore > score3 ? firstBigScore : score3 ; // which team got first possition through scoring highest
+    return finalBigScore ; // the final result on the basis of highest score
+}
+console.log( biggestScore(45,12,89) ); // 89 here we have scores of 3 different cricket teams and now we have to find the winner
