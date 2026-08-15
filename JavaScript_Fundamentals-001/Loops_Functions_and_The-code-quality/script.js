@@ -24,3 +24,17 @@ switch (day){
     default:
         console.log("The input is invalid");                                
 };
+
+
+// Task 3 : Function Declaration vs Expression (hoisting)
+
+greetDeclared();
+greetExpression();
+
+function greetDeclared(){
+    console.log("Hello function declaration");      // Hello function declaration
+} 
+
+const greetExpression = function(){
+    console.log("Hello function expression");       // Uncaught ReferenceError: Cannot access 'greetExpression' before initialization
+};
