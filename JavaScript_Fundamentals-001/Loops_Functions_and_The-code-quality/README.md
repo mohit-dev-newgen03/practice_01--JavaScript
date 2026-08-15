@@ -1,0 +1,2 @@
+This is the second folder of my JS fundamental practice,
+here i will cover loops, functions and code quality, all my practice tasks came from Claude and all my learning session are from javascript.info. Thank you 🙇‍♂️ 
