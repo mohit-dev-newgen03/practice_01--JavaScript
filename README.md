@@ -5,4 +5,5 @@ In this repository, I will store everything related to my daily JavaScript pract
 | Topic                  | Folder            | Status |
 |------------------------|--------------------|--------|
 | Variables & Data Types with Operators | 01-Variable_and_Data-types_with_Operators | ✅ Completed |
-| Code quality with Loops and Functions | 02-Loops_Functions_and_The-code-quality | 🕒 In progress |
+| Code quality with Loops and Functions | 02-Loops_Functions_and_The-code-quality | ✅ Completed |
+| Objects the basics | 03-Objects | 🕒 In progress |
