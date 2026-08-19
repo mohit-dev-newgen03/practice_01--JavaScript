@@ -66,3 +66,25 @@ manager.introduce();
 
 let introduceAlone = employee.introduce;
 introduceAlone();
+
+
+// Task 4 : A simple boolean indicator for movie rating
+
+function MovieRating (title, rating, genre){
+    this.title = title
+    this.rating = rating
+    this.genre = genre
+    this.isTopRated = function(){
+        if(this.rating >= 8){
+            return true;
+        }else{
+            return false;
+        };
+    };
+};
+
+let firstMovie = new MovieRating("endgame", 10, "Action/Thriller");
+let secondMovie = new MovieRating("Toy Story", 4, "Comedy/Children");
+
+console.log(firstMovie.isTopRated());
+console.log(secondMovie.isTopRated());
