@@ -15,3 +15,15 @@ creating an independent copy, using a "shopping cart preview" bug scenario.
 it points to the same one in memory. Use `Object.assign({}, obj)` or
 `{ ...obj }` for a real, independent copy. `===` on objects compares
 reference, not content.
+
+
+**Task 3 : modeling a simple employee record system for an HR tool.**
+
+#Object Methods this*
+
+Practiced how `this` is determined by the call site, not by where a
+method is defined — reusing the same function across two different
+objects (`employee` and `manager`) proved `this` changes based on who
+calls it. Also observed what happens when a method is called with no
+object attached (`this` breaks silently instead of throwing, since the
+code isn't running in strict mode).
