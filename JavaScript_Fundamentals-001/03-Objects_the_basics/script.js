@@ -44,3 +44,25 @@ console.log(safeCopy.totalPrice);  // 250
 
 console.log(realCart === previewCart); // true — same reference
 console.log(realCart === safeCopy);    // false — different object, same starting values
+
+
+// Task 3 : modeling a simple employee record system for an HR tool.
+
+let employee = {
+    name: "John",
+    role: "SRE",
+    introduce() {
+        console.log(`Hi im ${this.name}, working as ${this.role}`);
+    }
+};
+
+let manager = {
+    name: "Robert",
+    role: "SRE Manager"
+};
+
+manager.introduce = employee.introduce;
+manager.introduce();
+
+let introduceAlone = employee.introduce;
+introduceAlone();
