@@ -27,3 +27,15 @@ objects (`employee` and `manager`) proved `this` changes based on who
 calls it. Also observed what happens when a method is called with no
 object attached (`this` breaks silently instead of throwing, since the
 code isn't running in strict mode).
+
+
+**Task 4 : A simple boolean indicator for movie rating**
+
+#Object Methods, this and new cunstructor.
+
+Built a `MovieRating` constructor with a method `isTopRated()` that
+returns `true`/`false` based on the movie's rating. Practiced calling
+constructors with `new`, and fixed two real mistakes along the way:
+forgetting `()` when calling a method (which prints the function itself
+instead of running it), and returning descriptive strings instead of an
+actual boolean, which defeats the purpose of a yes/no method name.
