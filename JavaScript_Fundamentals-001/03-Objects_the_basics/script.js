@@ -88,3 +88,36 @@ let secondMovie = new MovieRating("Toy Story", 4, "Comedy/Children");
 
 console.log(firstMovie.isTopRated());
 console.log(secondMovie.isTopRated());
+
+
+// Task 5 : Objects - optional-chaining
+
+let userWithContact = {
+    name: "John",
+    age: 20,
+    contactInfo: {
+        phoneNo: 121234,
+        emailId: "john@gmail.com"
+    },
+    notifyUser: function () {
+        console.log(`Hello user ${this.contactInfo.phoneNo}, is your phone No.`);
+    }
+};
+
+let userWithoutContact = {
+    name: "Robert",
+    age: 15
+};
+
+// console.log(userWithoutContact.contactInfo.phoneNo); 
+ 
+// Uncaught TypeError: Cannot read properties of undefined (reading 'phoneNo')
+// Note: this is a TypeError, not a ReferenceError. contactInfo IS undefined here
+// (a valid value), but we tried to read a property OFF an undefined value —
+// that's a type-level problem, not a "this name doesn't exist" problem.
+
+console.log(userWithoutContact.contactInfo?.phoneNo); // undefined — no crash
+console.log(userWithContact.contactInfo?.phoneNo);    // 121234 — real value returned
+
+userWithoutContact.notifyUser?.(); // does nothing, safely, since notifyUser doesn't exist
+userWithContact.notifyUser?.();    // runs normally, logs the phone message
