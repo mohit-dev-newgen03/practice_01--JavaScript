@@ -121,3 +121,41 @@ console.log(userWithContact.contactInfo?.phoneNo);    // 121234 — real value r
 
 userWithoutContact.notifyUser?.(); // does nothing, safely, since notifyUser doesn't exist
 userWithContact.notifyUser?.();    // runs normally, logs the phone message
+
+
+// Task 6 : book-tracker 
+
+function Book(title, author, totalCopies) {
+    this.title = title;
+    this.author = author;
+    this.totalCopies = totalCopies;
+    this.borrowedCopies = 0;
+
+    this.borrowCopy = function () {
+        if (this.borrowedCopies < this.totalCopies) {
+            this.borrowedCopies += 1;
+        } else {
+            return "No copies are available";
+        }
+    };
+
+    this.getStatus = function () {
+        return `Copies of ${this.title} by ${this.author} are borrowed ${this.borrowedCopies}/${this.totalCopies}`;
+    };
+}
+
+let book1 = new Book("Poem of rain", "Robert", 4);
+let book2 = new Book("raining in ocean", "Michael", 7);
+
+book1.borrowCopy();
+console.log(book1.getStatus()); // 1/4
+
+book1.borrowCopy();
+book1.borrowCopy();
+book1.borrowCopy();
+console.log(book1.getStatus()); // 4/4
+
+book2.borrowCopy();
+book2.borrowCopy();
+book2.borrowCopy();
+console.log(book2.getStatus()); // 3/7
