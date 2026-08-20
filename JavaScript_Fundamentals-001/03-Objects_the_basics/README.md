@@ -39,3 +39,15 @@ constructors with `new`, and fixed two real mistakes along the way:
 forgetting `()` when calling a method (which prints the function itself
 instead of running it), and returning descriptive strings instead of an
 actual boolean, which defeats the purpose of a yes/no method name.
+
+
+**Task 5 : Objects - optional-chaining**
+
+Practiced safely accessing a nested property (`contactInfo.phoneNo`) that
+doesn't exist on every object, without crashing the script. Confirmed
+regular dot notation throws a **TypeError** (not a ReferenceError) when
+reading a property off `undefined`, while `?.` short-circuits safely and
+returns `undefined` instead. Also learned that a function with no
+`return` always resolves to `undefined` — so logging a method call
+directly can print an unexpected extra `undefined` if you're not careful
+about what you're actually logging.
