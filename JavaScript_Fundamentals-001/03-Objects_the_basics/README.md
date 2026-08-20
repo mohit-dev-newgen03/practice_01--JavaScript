@@ -51,3 +51,16 @@ returns `undefined` instead. Also learned that a function with no
 `return` always resolves to `undefined` — so logging a method call
 directly can print an unexpected extra `undefined` if you're not careful
 about what you're actually logging.
+
+
+**Task 6 : book-tracker**
+
+# Objects Basics Library Book Tracker
+
+Built a `Book` constructor with `borrowCopy()` and `getStatus()` methods
+to track borrowed copies per book. Practiced constructor functions, `new`,
+and `this` working correctly across multiple independent objects.
+
+Note: constructor initially used comma-chained assignments instead of
+separate statements — refactored for readability, since this pattern is
+fragile and non-standard in real code.
