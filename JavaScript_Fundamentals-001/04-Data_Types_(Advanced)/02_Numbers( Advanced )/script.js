@@ -34,3 +34,18 @@ function getRandomBetween(min, max) {
 }
 
 console.log(getRandomBetween(1, 6));
+
+
+// Task 4 : processes messy price/quantity data
+
+javascript
+function processItem(rawPrice, rawQty){
+    let cleanPrice = parseFloat(rawPrice);
+    let cleanQuantity = parseInt(rawQty);
+
+    let totalCost = (cleanPrice * cleanQuantity);
+    return +(totalCost.toFixed(2));
+};
+
+console.log(processItem("49.99 USD", "3 units"));       // = 149.97,    the total amount of cleanPrice and cleanQuantity, the fractional part is also counted.
+console.log(processItem("abc", "3 units"));             // = NaN,       because the calculation failed caused by unreal rawPrice.
