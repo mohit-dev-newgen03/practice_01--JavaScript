@@ -24,3 +24,14 @@ condition checked a variable before it was ever assigned a value,
 causing the loop to silently never run and the function to return
 undefined every time — same class of bug as checking a condition before
 the value it depends on actually exists.
+
+
+**Task 4 : processes messy price/quantity data**
+
+*Numbers — processItem*
+
+Built a grocery price processor that safely parses messy string inputs
+(parseFloat/parseInt) into usable numbers, rounds the total to 2 decimal
+places for display, and converts the rounded value back into a real
+number (since .toFixed() returns a string). Also confirmed NaN spreads
+through any calculation it's part of, when parsing fails on invalid input.
