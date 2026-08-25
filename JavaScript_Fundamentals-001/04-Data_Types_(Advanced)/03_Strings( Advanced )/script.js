@@ -37,3 +37,22 @@ function formatUsername (rawName){
 };
 
 console.log(formatUsername("  Rahul Sharma  "));
+
+
+// Task 3 : function to check if the first character of a string is a Vowel
+
+
+function startsWithVowel(word) {
+    if (word[0] === "a" || 
+        word[0] === "e" ||
+        word[0] === "i" ||
+        word[0] === "o" ||
+        word[0] === "u"){
+        return true;
+        }else{
+            return false;
+        };
+};
+
+console.log(startsWithVowel("apple"));
+console.log(startsWithVowel("banana"));
