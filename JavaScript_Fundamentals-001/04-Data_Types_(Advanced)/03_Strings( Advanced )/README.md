@@ -21,3 +21,10 @@ immutable values, including underscores where ever the spaces are between in tha
 Here we wrote a function to check the first most character of a string if its a vowel or not,
 and if its a vowel then this function will return false, only lower case words will be evaluated and
 if any uppercase character will appears then it will be a false.
+
+
+**Final Task 5 : Hidding email using slice and index of**
+
+A function that slices the first 3 character from a string That is significantly an email Adress 
+and writing `***` instead of the lefted words from that email to mask that email used slice to for,
+extracting first 3 characters and last domain part from the keywords like `@` using index.
