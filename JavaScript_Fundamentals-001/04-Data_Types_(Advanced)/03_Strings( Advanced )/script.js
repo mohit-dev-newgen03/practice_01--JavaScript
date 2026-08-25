@@ -56,3 +56,18 @@ function startsWithVowel(word) {
 
 console.log(startsWithVowel("apple"));
 console.log(startsWithVowel("banana"));
+
+
+// Final Task 5 : Hidding email using slice and index of 
+
+
+function maskEmail(email){
+    let first3words = email.slice(0, 3);
+    let atPosition = email.indexOf("@");
+    let domainPart = email.slice(atPosition);
+    
+    let finalAnswer = first3words + "***" + domainPart; 
+    return finalAnswer;
+};
+
+console.log(maskEmail("rahul123@gmail.com"));
