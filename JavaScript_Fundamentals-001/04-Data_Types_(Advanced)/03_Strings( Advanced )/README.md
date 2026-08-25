@@ -14,3 +14,10 @@ Through a function that first trims the extra spaces arround a string,
 then converting that string to lower case using a built in method, all along to 
 saving character by character in a new variable through a *for* loop because in js the strings are
 immutable values, including underscores where ever the spaces are between in that string.
+
+
+**Task 3 : function to check if the first character of a string is a Vowel**
+
+Here we wrote a function to check the first most character of a string if its a vowel or not,
+and if its a vowel then this function will return false, only lower case words will be evaluated and
+if any uppercase character will appears then it will be a false.
