@@ -16,3 +16,24 @@ function countOccurrences(str, char){
 
 console.log(countOccurrences("banana", "n"));           // 2 
 console.log(countOccurrences("banana", "a"));           // 3
+
+
+// Task 2 : Cleaning up messy string through a fromat Username function
+
+
+function formatUsername (rawName){
+    let cleanedRawname = rawName.trim();
+    let lowerCase = (cleanedRawname.toLowerCase());
+
+    let finalAnswer = "";
+    for (let i = 0; i < lowerCase.length; i++){
+        if (lowerCase[i] == " "){
+            finalAnswer = finalAnswer + `_`;
+        }else {
+            finalAnswer = finalAnswer + lowerCase[i];
+        };
+    }
+    return finalAnswer;
+};
+
+console.log(formatUsername("  Rahul Sharma  "));
