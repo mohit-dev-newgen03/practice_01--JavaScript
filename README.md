@@ -8,3 +8,4 @@ In this repository, I will store everything related to my daily JavaScript pract
 | Code quality with Loops and Functions | 02-Loops_Functions_and_The-code-quality | ✅ Completed |
 | Objects the basics | 03-Objects_the_basics | ✅ Completed |
 | Data types | 04-Data_Types_(Advanced) | 🕒 In progress |
+| Array and its methods| 05-Arrays (including Methods) | 🕒 In progress |
