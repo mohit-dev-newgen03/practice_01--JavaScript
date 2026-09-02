@@ -15,3 +15,10 @@ after all these, i print removed and all the left job titles.
 
 Accumulating all the values in the Attendence Array using a for loop and printed its total value,
 after that also printed the last index of the attendence index through `.lenght` property using square brackets.
+
+
+**Task 3 : Array basics (push/pop + array mutability)**
+
+Here in this task i've made a small to do list task checker ( to check the mutability of an Array )
+used an array `todoList` that holds a few values of tasks and then added a value in it through .push method 
+lastly to check the mutability of the array, i removed the last most added value and saved it in a new undoneTask variable.  
