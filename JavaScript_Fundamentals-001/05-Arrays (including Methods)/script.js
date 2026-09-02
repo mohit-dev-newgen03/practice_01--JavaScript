@@ -36,3 +36,17 @@ let undoneTask = todoList.pop();    // Removing the last task and storing it in 
 
 console.log(undoneTask);            // The task that were removed 
 console.log(todoList);              // Whole todo list 
+
+
+// Task 4 : Arrays method (.slice() vs .splice())
+
+
+let fullPlaylist = ["Song A", "Song B", "Song C", "Song D", "Song E"];
+
+let previewList = fullPlaylist.slice(0, 3);
+console.log(previewList);                       // created and printed new playlist using the fullPlaylist
+
+console.log(fullPlaylist);                      // confirming that the original in not changed
+
+fullPlaylist.splice(2, 1);                      // updating the original fullPlaylist and removing a song on the index 2
+console.log(fullPlaylist);                      // confirming the changes of fullPlaylist
