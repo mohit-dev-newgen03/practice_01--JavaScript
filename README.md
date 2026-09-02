@@ -1,6 +1,8 @@
 # practice_01--JavaScript
 In this repository, I will store everything related to my daily JavaScript practice—specifically the questions I ask the Claude AI assistant based on what I read daily on javascript.info—and I will also track my daily progress. 👍
 
+Every task that is covered in this repo is based on real world analogy, on the problems that frequently comes in our daily life. 
+
 
 | Topic                  | Folder            | Status |
 |------------------------|--------------------|--------|
