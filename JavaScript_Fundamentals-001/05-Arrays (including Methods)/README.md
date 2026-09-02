@@ -9,3 +9,9 @@ Complete array section to array's modern methods and even more related to it
 For this task, Firstly i created an empty array to add there few jobs through the correct method,
 then i used Last in First out method AKA : `LIFO` to add 3 jobs and remove the first most added job 
 after all these, i print removed and all the left job titles. 
+
+
+**Task 2 : Array basics (indexed loop + length)**
+
+Accumulating all the values in the Attendence Array using a for loop and printed its total value,
+after that also printed the last index of the attendence index through `.lenght` property using square brackets.
