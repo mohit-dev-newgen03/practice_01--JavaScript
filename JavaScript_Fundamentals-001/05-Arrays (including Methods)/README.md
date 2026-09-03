@@ -36,3 +36,10 @@ and lastly the one last task was to remove a song in the middle of the array and
 Using two different methods to differentiate the core usage and more efficient work of them 
 using `forEach` method to just iterate and print arrays all index, then used `.map` to build a whole new array
 and changing every indexes value in the new one despite of touching the old once. 
+
+
+**Task 6 : Arrays method (.filter() and .findIndex())**
+
+Here we have used two different methods on the basis of there behaviour to find the related items in a specific array.
+the task were to find the items that are in the stock of a array through the `filter` method 
+and finding the first out of stock item through the `findIndex` method and print them both 
