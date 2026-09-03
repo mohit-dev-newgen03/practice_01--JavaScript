@@ -68,3 +68,15 @@ let discountedPrices = prices.map(function(value){
 
 console.log(discountedPrices);                  // (4) [180, 430, 55, 600]  the discounted price through .map method
 console.log(prices);                            // (4) [200, 450, 75, 620]  Untouched prices Array that contains old unchanged price
+
+
+// Task 6 : Arrays method (.filter() and .findIndex())
+
+
+let stockLevels = [12, 0, 5, 0, 8, 3];
+
+let inStockOnly = stockLevels.filter(item => item > 0);
+console.log(inStockOnly);                                           // (4) [12, 5, 8, 3] = only these are above 0 
+
+let firstOutOfStock = stockLevels.findIndex(item => item == 0);
+console.log(firstOutOfStock);                                       // 1 = the first 0 is at the first index of the array
