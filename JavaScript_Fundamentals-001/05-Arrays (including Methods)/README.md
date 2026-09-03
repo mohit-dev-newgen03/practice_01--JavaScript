@@ -29,3 +29,10 @@ lastly to check the mutability of the array, i removed the last most added value
 In this task, i created an array where were a few songs
 the task is to store 3 songs from the starting of that arrays into a new variable through `.slice` method
 and lastly the one last task was to remove a song in the middle of the array and print the whole changed array.
+
+
+**Task 5 : Arrays method (.forEach() vs .map())**
+
+Using two different methods to differentiate the core usage and more efficient work of them 
+using `forEach` method to just iterate and print arrays all index, then used `.map` to build a whole new array
+and changing every indexes value in the new one despite of touching the old once. 
