@@ -50,3 +50,21 @@ console.log(fullPlaylist);                      // confirming that the original 
 
 fullPlaylist.splice(2, 1);                      // updating the original fullPlaylist and removing a song on the index 2
 console.log(fullPlaylist);                      // confirming the changes of fullPlaylist
+
+
+// Task 5 : Arrays method (.forEach() vs .map())
+
+
+let prices = [200, 450, 75, 620];
+
+prices.forEach(function(price){
+    console.log(`Price : ${price}`)
+});
+
+let discountedPrices = prices.map(function(value){
+    let discount = value - 20;
+    return discount;
+});
+
+console.log(discountedPrices);                  // (4) [180, 430, 55, 600]  the discounted price through .map method
+console.log(prices);                            // (4) [200, 450, 75, 620]  Untouched prices Array that contains old unchanged price
