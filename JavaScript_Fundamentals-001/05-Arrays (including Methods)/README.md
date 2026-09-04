@@ -43,3 +43,11 @@ and changing every indexes value in the new one despite of touching the old once
 Here we have used two different methods on the basis of there behaviour to find the related items in a specific array.
 the task were to find the items that are in the stock of a array through the `filter` method 
 and finding the first out of stock item through the `findIndex` method and print them both 
+
+
+**Task 7 : Arrays method (.sort() and the numeric trap)**
+
+This is one of a hard task that required me to learn in depth about the sorting internal program
+here the `sort` method uses *Unicode* comparison to compare elements in an array,
+so by default 1 stands first in the descending order and by default it only checks the first leter of an stringify array
+that why without any instruction the core `sort` method prints a wrong output. 
