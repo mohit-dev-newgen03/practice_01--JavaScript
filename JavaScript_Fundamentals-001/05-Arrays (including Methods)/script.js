@@ -80,3 +80,16 @@ console.log(inStockOnly);                                           // (4) [12,
 
 let firstOutOfStock = stockLevels.findIndex(item => item == 0);
 console.log(firstOutOfStock);                                       // 1 = the first 0 is at the first index of the array
+
+
+// Task 7 : Arrays method (.sort() and the numeric trap)
+
+
+let scores = [45, 9, 100, 23, 5];
+
+let sortedScores = scores.sort();
+console.log(sortedScores);                              // (5) [100, 23, 45, 5, 9] = it's because the sort method uses unicode comparison by default and 1 comes before 2 and so on that why 9 comes last.
+
+let trueSortedScore = scores.sort((a, b) => a - b );     
+
+console.log(trueSortedScore)                            // (5) [5, 9, 23, 45, 100] = here is the right answer when we applied a comparison function to sort method.
