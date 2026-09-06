@@ -51,3 +51,8 @@ This is one of a hard task that required me to learn in depth about the sorting 
 here the `sort` method uses *Unicode* comparison to compare elements in an array,
 so by default 1 stands first in the descending order and by default it only checks the first leter of an stringify array
 that why without any instruction the core `sort` method prints a wrong output. 
+
+
+**Task 8 : Iterables — Task 1 of 1**
+
+It's just a basic task of using `for of` loop and a counter to print each items index. 
