@@ -109,3 +109,18 @@ for (let item of items){
 /* Bread at index 1
 script.js:5 Milk at index 2
 script.js:5 Eggs at index 3 */
+
+
+// Task 9 : Map and Set (Map basics)
+
+
+let loginTimes = new Map();
+
+loginTimes.set("rahul", "9:00 AM")
+        .set("priya", "9:15 AM")
+        .set("aditya", "9:30 AM");
+        
+console.log( loginTimes.get("priya"));              // 9:15 AM
+console.log( loginTimes.has("neha"));               // false
+
+console.log(loginTimes.size);                       // 3
