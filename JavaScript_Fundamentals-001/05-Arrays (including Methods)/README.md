@@ -56,3 +56,9 @@ that why without any instruction the core `sort` method prints a wrong output.
 **Task 8 : Iterables — Task 1 of 1**
 
 It's just a basic task of using `for of` loop and a counter to print each items index. 
+
+
+**Task 9 : Map and Set (Map basics)**
+
+Through basic `Method` statements created a map variable that holds different data 
+accessing them using right methods, the basic practices for fundamental understading.
