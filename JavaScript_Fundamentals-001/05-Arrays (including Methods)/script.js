@@ -93,3 +93,19 @@ console.log(sortedScores);                              // (5) [100, 23, 45, 5,
 let trueSortedScore = scores.sort((a, b) => a - b );     
 
 console.log(trueSortedScore)                            // (5) [5, 9, 23, 45, 100] = here is the right answer when we applied a comparison function to sort method.
+
+
+// Task 8 : Iterables — Task 1 of 1
+
+
+let items = ["Bread", "Milk", "Eggs"];
+let index = 1;
+
+for (let item of items){
+    console.log(`${item} at index ${index}`);
+    index++ ;
+};
+
+/* Bread at index 1
+script.js:5 Milk at index 2
+script.js:5 Eggs at index 3 */
