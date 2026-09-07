@@ -141,3 +141,19 @@ console.log(viewCounts.get(product1));          // 5
 viewCounts.delete(product2);
 
 console.log(viewCounts.size);                   // 1
+
+
+// Task 11 : Set methods (Set — unique values)
+
+
+let emailSubmissions = ["a@mail.com", "b@mail.com", "a@mail.com", "c@mail.com", "b@mail.com"];
+
+let emails = new Set();
+
+for (let email of emailSubmissions){
+        emails.add(email);
+};
+
+console.log(emails);                            // Set(3) {'a@mail.com', 'b@mail.com', 'c@mail.com'}
+console.log(emails.size);                       // 3
+console.log(emails.has("a@mail.com"));          // true        
