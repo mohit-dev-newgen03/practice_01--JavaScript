@@ -68,4 +68,11 @@ accessing them using right methods, the basic practices for fundamental understa
 
 When we store properties in an object it converts the key into string no matter you were putting any type of data
 Number, Boolean or symbol ETC. that's where we `Map` comes in the game, it holds different type of key'ed data, 
-and even it hold objects and we have covered this specific task to add the key'ed object data into it.   
+and even it hold objects and we have covered this specific task to add the key'ed object data into it. 
+
+
+**Task 11 : Set methods (Set — unique values)**
+
+`Set` a method to save only unique values without key's in an Array
+in this task i've used for of loop to iterate over an Array that hold's a few same data 
+to save only unique one's in a new array through it.
