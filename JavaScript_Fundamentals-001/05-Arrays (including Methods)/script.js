@@ -124,3 +124,20 @@ console.log( loginTimes.get("priya"));              // 9:15 AM
 console.log( loginTimes.has("neha"));               // false
 
 console.log(loginTimes.size);                       // 3
+
+
+// Task 10 : (Map — keys can be any type)
+
+
+let product1 = { name: "Shoes" };
+let product2 = { name: "Bag" };
+
+let viewCounts = new Map();
+
+viewCounts.set(product1, 5)
+        .set(product2, 12);
+
+console.log(viewCounts.get(product1));          // 5
+viewCounts.delete(product2);
+
+console.log(viewCounts.size);                   // 1
