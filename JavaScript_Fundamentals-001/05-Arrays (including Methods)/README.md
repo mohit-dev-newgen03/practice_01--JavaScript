@@ -62,3 +62,10 @@ It's just a basic task of using `for of` loop and a counter to print each items 
 
 Through basic `Method` statements created a map variable that holds different data 
 accessing them using right methods, the basic practices for fundamental understading.
+
+
+**Task 10 : (Map — keys can be any type)**
+
+When we store properties in an object it converts the key into string no matter you were putting any type of data
+Number, Boolean or symbol ETC. that's where we `Map` comes in the game, it holds different type of key'ed data, 
+and even it hold objects and we have covered this specific task to add the key'ed object data into it.   
