@@ -8,3 +8,9 @@ In this task My Claude buddy wants me to work on the basic Object method of `Obj
 that turns an object into an array of the key of object holds, so here in this task i used this method 
 to print the keys and values but claude wants me to print key using `Object.keys()` method and values through,
 the bracked notation from one of the objects methods to use pairs.
+
+
+**Task 2 : Objects Advanced (Object.values())**
+
+Here in this task, i used another method `Objects.values` to take values from the given object,
+after that used reduce method from the arrays methods to calculate the total of the given object.
