@@ -14,3 +14,10 @@ the bracked notation from one of the objects methods to use pairs.
 
 Here in this task, i used another method `Objects.values` to take values from the given object,
 after that used reduce method from the arrays methods to calculate the total of the given object.
+
+
+**Task 3 : Objects Advanced (Object.entries())**
+
+In this i used the final method `Object.entries()` and filter method from Arrays 
+to store a specific explicit value from an array, all these 3 methods are specifically built,
+to give the access of array methods to Objects, because arrays are specified with only a few methods.
