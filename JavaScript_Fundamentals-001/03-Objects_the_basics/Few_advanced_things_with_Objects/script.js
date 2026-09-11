@@ -25,3 +25,22 @@ let stockCounts = { pens: 2, notebooks: 0, erasers: 15, staplers: 0 };
 let outOFstocks = Object.entries(stockCounts).filter(empty => empty[1] === 0);
 
 console.log(outOFstocks);
+
+
+// Task 4 : Object Advanced (Destructuring assignment)
+
+let order = { orderId: "ORD123", customerName: "Priya", amount: 2500, status: undefined };
+
+let {orderId, customerName, amount, status = "Pending"} = order;
+
+console.log(orderId);                                   // "ORD123"    
+console.log(customerName);                              // "Priya"    
+console.log(amount);                                    // 2500
+console.log(status);                                    // "Pending"  = default values, since the given status is undefined 
+
+let topProducts = ["Laptop", "Phone", "Tablet"];
+
+let [first, ,third] = topProducts;
+
+console.log(first);                                     // "Laptop" 
+console.log(third);                                     // "Tablet"
