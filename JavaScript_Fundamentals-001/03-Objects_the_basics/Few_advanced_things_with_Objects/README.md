@@ -21,3 +21,11 @@ after that used reduce method from the arrays methods to calculate the total of 
 In this i used the final method `Object.entries()` and filter method from Arrays 
 to store a specific explicit value from an array, all these 3 methods are specifically built,
 to give the access of array methods to Objects, because arrays are specified with only a few methods.
+
+
+**Task 4 : Object Advanced (Destructuring assignment)**
+
+Practiced unpacking values from both objects (name-based) and arrays
+(position-based) in a single line. Used a default value during object
+destructuring to handle an undefined property, and used comma-skipping
+to selectively pull specific positions out of an array.
