@@ -11,3 +11,10 @@ in this task i parsed a date into a Date object then printed stored its Date, Mo
 then printed them all them at once.
 
 *A basic pracitce with the Date object*
+
+
+**Task 2 : Calculating : time ago (date differences)**
+
+here in this task we have subtracted and devided with the two different ``Date Objects``
+to get the time difference and This is genuinely the exact mechanism behind every real 
+*posted X minutes/hours ago* feature you'll see in real apps :- (Reddit, Twitter, comment sections, etc.)
