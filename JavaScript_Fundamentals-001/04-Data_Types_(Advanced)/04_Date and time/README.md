@@ -18,3 +18,13 @@ then printed them all them at once.
 here in this task we have subtracted and devided with the two different ``Date Objects``
 to get the time difference and This is genuinely the exact mechanism behind every real 
 *posted X minutes/hours ago* feature you'll see in real apps :- (Reddit, Twitter, comment sections, etc.)
+
+
+**Task 3 : Comparing dates (deadline checker)**
+
+Compared two Date objects directly using `<`/`>` to check whether a
+deadline has passed relative to the current moment. Fixed an inverted
+condition where the overdue/on-time messages were swapped — a good
+reminder to trace comparison logic against real dates rather than
+assuming the first branch is correct just because the code runs
+without errors.
