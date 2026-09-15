@@ -17,3 +17,15 @@ let now = new Date("2026-09-15T10:45:00");
 
 let timeDifference = (((now - commentTime) / 1000 ) /60 ) ;
 console.log(`Posted ${timeDifference} minutes ago`);                // Posted 45 minutes ago
+
+
+// Task 3 : Comparing dates (deadline checker)
+
+let deadline = new Date("2026-09-10T23:59:59");
+let currentDate = new Date();
+
+if (deadline > currentDate){
+    console.log("Task is still on time");
+}else if(deadline < currentDate){
+    console.log("Task is overdue");
+}                                               // Task is overdue
