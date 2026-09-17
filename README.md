@@ -10,4 +10,4 @@ Every task that is covered in this repo is based on real world analogy, on the p
 | Code quality with Loops and Functions | 02-Loops_Functions_and_The-code-quality | ✅ Completed |
 | Objects the basics | 03-Objects_the_basics | ✅ Completed |
 | Data types | 04-Data_Types_(Advanced) | ✅ Completed |
-| Array and its methods| 05-Arrays (including Methods) | 🕒 In progress |
+| Array and its methods| 05-Arrays (including Methods) | ✅ Completed |
