@@ -11,3 +11,4 @@ Every task that is covered in this repo is based on real world analogy, on the p
 | Objects the basics | 03-Objects_the_basics | ✅ Completed |
 | Data types | 04-Data_Types_(Advanced) | ✅ Completed |
 | Array and its methods| 05-Arrays (including Methods) | ✅ Completed |
+| Advanced working with functions | 06-Advanced_working_with-Functions | 🕒 inComplete |
