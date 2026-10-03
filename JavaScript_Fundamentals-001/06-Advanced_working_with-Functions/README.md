@@ -24,3 +24,15 @@ number of function arguments into a real array (totalCost using
 arguments at a call site, plus combining two arrays into one. Confirmed
 the "collect vs. expand" distinction depending on context (parameter
 list vs. call site/array literal).
+
+
+**Task 3 : Variable scope and Closure**
+
+Built a bank account tracker where `balance` stays genuinely private —
+inaccessible from outside — yet remains fully usable through deposit()
+and getBalance(), both of which "remember" balance via closure, even
+after createAccount() has already finished running. Fixed a bug where
+getBalance() used console.log() internally instead of return, causing
+an extra "undefined" to print from the outer console.log() wrapper —
+same root cause as the earlier notifyUser bug: a function with no
+explicit return always resolves to undefined.
