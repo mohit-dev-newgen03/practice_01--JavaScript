@@ -27,3 +27,27 @@ let weekendPrices = [150, 300];
 let allPrices = [...weekdayPrices, ...weekendPrices];
 
 console.log( totalCost(...allPrices) );                   // 750
+
+
+// Task 3 : Variable scope and Closure
+
+function createAccount(startingBalance){
+    let balance = startingBalance;
+    
+    
+        return {
+            deposit: function (amnt){
+                balance += amnt ; 
+            },
+            getBalance: function (){
+                return balance;
+            }               
+        };
+    
+
+};
+
+let myAccount = createAccount(1000);
+myAccount.deposit(500);
+
+console.log(myAccount.getBalance());
