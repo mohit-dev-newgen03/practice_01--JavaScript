@@ -48,3 +48,12 @@ instead of crashing, unlike let/const, which throw in the temporal dead zone).
 
 Reinforced why let/const were introduced — to catch these silent failure modes early
 as real errors instead of letting them pass unnoticed.
+
+
+**Task 5 : Global object**
+
+Demonstrated that top-level `var` declarations automatically attach themselves as properties on the global object (globalThis), 
+while `let`/`const` deliberately do not — avoiding global namespace pollution. 
+
+Noted that `globalThis` works consistently across environments (browser's `window`, Node's `global`), 
+which matters since backend work happens in Node, where `window` doesn't exist.
