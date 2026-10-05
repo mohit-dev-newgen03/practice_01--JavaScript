@@ -90,3 +90,23 @@ Here it demonstrates the hoisting
 here in the example above we see how accessing var before initialization does not gives an error
 intead it gave us undefined and it's not an error in js.  
 */
+
+
+// Task 5 : Global object 
+
+var globalVar = "I'm attached";
+let globalLet = "I'm not attached";
+
+console.log(globalThis.globalVar);          // I'm attached
+console.log(globalThis.globalLet);          // undefined 
+
+/* 
+
+here The Global object shows how the var variables directly saves as properties in the global object 
+there is an object exists which is named as Global object, which contains the main properties like JSON, Arrays and Objects
+so the var variables, if create them globally they will go and save as global objects property and pollute there
+but the let and const are does not like that, they create top-level variables that exist,they do not pollute the global object.
+
+
+that why accessing globalThis.globalLet gives us undefined
+*/
