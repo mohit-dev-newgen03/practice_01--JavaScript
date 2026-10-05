@@ -36,3 +36,15 @@ getBalance() used console.log() internally instead of return, causing
 an extra "undefined" to print from the outer console.log() wrapper —
 same root cause as the earlier notifyUser bug: a function with no
 explicit return always resolves to undefined.
+
+
+**Task 4 : The old "var"**
+
+
+Demonstrated var's two core quirks directly: function-scoping (a var declared inside an if-block "escapes" 
+into the surrounding function, unlike let, which stays block-scoped and throws a ReferenceError when
+accessed outside its block), and hoisting (accessing a var before its declaration line silently returns undefined 
+instead of crashing, unlike let/const, which throw in the temporal dead zone). 
+
+Reinforced why let/const were introduced — to catch these silent failure modes early
+as real errors instead of letting them pass unnoticed.
