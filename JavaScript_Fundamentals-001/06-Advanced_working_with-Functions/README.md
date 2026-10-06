@@ -57,3 +57,12 @@ while `let`/`const` deliberately do not — avoiding global namespace pollution.
 
 Noted that `globalThis` works consistently across environments (browser's `window`, Node's `global`), 
 which matters since backend work happens in Node, where `window` doesn't exist.
+
+
+**Task 6 : Function object, NFE**
+
+Practiced attaching a custom property (timesCalled) directly onto a function object
+incrementing it on each call to track usage — confirming functions are real objects that can carry their own data.
+Clarified that a function body accessing its own outer variable name isn't special 
+"behind the scenes" behavior — it's the same outer-scope access used throughout closures (6.3); the function and the outer
+variable are the same reference, not a copy. Learned this approach is fragile if the outer variable gets reassigned, which is exactly why Named Function Expressions (NFE) exist as a safer self-reference pattern for cases like recursion.
