@@ -110,3 +110,18 @@ but the let and const are does not like that, they create top-level variables th
 
 that why accessing globalThis.globalLet gives us undefined
 */
+
+
+// Task 6 : Function object, NFE
+
+let validateEmail = function(email) { 
+    validateEmail.timesCalled++;
+    return email.includes("@");
+}
+
+validateEmail.timesCalled = 0;
+
+console.log(validateEmail("test@mail.com"));            // true
+console.log(validateEmail("bademail"));                 // false
+
+console.log(validateEmail.timesCalled);                 // 2
