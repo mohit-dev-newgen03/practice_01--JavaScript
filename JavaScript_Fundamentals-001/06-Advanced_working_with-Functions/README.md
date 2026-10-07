@@ -66,3 +66,11 @@ incrementing it on each call to track usage — confirming functions are real ob
 Clarified that a function body accessing its own outer variable name isn't special 
 "behind the scenes" behavior — it's the same outer-scope access used throughout closures (6.3); the function and the outer
 variable are the same reference, not a copy. Learned this approach is fragile if the outer variable gets reassigned, which is exactly why Named Function Expressions (NFE) exist as a safer self-reference pattern for cases like recursion.
+
+
+**Task 7 : the "new Function" syntax**
+
+Created a function dynamically from strings using new Function(), a rarely-used third way to define functions 
+(mainly relevant for code-generation or executing trusted dynamic logic at runtime). 
+Noted the key limitation: unlike normal functions, new Function() doesn't form closures with surrounding code 
+— it only has access to the global scope, not local variables from where it's created.
