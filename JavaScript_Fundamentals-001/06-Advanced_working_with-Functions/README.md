@@ -74,3 +74,8 @@ Created a function dynamically from strings using new Function(), a rarely-used 
 (mainly relevant for code-generation or executing trusted dynamic logic at runtime). 
 Noted the key limitation: unlike normal functions, new Function() doesn't form closures with surrounding code 
 — it only has access to the global scope, not local variables from where it's created.
+
+
+**Task 8 : Scheduling: setTimeout and setInterval**
+
+Explored JavaScript's native scheduling methods to create a dynamic countdown timer using setInterval(). Highlighted the critical distinction between a timer's execution reference—which must be a named function to be explicitly callable—and the timer's tracking ID, which is a primitive value used solely by clearInterval() to stop execution. Fixed an initial timing configuration error by adjusting the delay from 5000ms (5 seconds per tick) to 1000ms (1 second per tick) to ensure accurate real-time updates. Additionally, demonstrated how to bypass single-return syntax limitations by using console.log() statements to output multiple progressive conditions within the interval loops.
