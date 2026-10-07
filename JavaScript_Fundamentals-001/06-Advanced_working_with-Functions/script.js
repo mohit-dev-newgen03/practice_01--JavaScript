@@ -132,3 +132,30 @@ console.log(validateEmail.timesCalled);                 // 2
 let multiply = new Function('a', 'b', 'return a * b');
 
 console.log(multiply(4,5));                 // 20 = new Function() can't access outer/local variables the normal way (no closures), only the global scope.
+
+
+// Task 8 : Scheduling: setTimeout and setInterval
+
+let secondsLeft = 5;
+let timerID;
+ 
+function countDown() {
+    secondsLeft--;
+    console.log(secondsLeft);
+    
+    if (secondsLeft === 0) {
+        console.log("Time's up!");
+        clearInterval(timerID); 
+    }
+}
+
+timerID = setInterval(countDown, 1000);    
+
+/*
+4
+3
+2
+1
+0
+Time's up!
+*/
