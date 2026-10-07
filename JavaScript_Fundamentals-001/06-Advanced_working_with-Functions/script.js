@@ -125,3 +125,10 @@ console.log(validateEmail("test@mail.com"));            // true
 console.log(validateEmail("bademail"));                 // false
 
 console.log(validateEmail.timesCalled);                 // 2
+
+
+// Task 7 : the "new Function" syntax 
+
+let multiply = new Function('a', 'b', 'return a * b');
+
+console.log(multiply(4,5));                 // 20 = new Function() can't access outer/local variables the normal way (no closures), only the global scope.
