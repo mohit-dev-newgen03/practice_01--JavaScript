@@ -159,3 +159,41 @@ timerID = setInterval(countDown, 1000);
 0
 Time's up!
 */
+
+
+// Task 9 : Decorators and forwarding, call/apply
+
+function slowSquare(n) {
+    console.log("Calculating...");
+    return n * n;
+};
+
+function cachingDecorator(func) {
+    let cache = new Map();
+
+    return function (val) {
+        if (cache.has(val)) {
+            return cache.get(val);
+        }
+
+        let result = func(val); 
+        
+        cache.set(val, result);
+        return result;   
+    };
+};
+
+slowSquare = cachingDecorator(slowSquare);
+console.log(slowSquare(4));                 // Calculating... 16
+console.log(slowSquare(4));                 // 16    
+
+console.log(slowSquare(5));                 // Calculating... 25    
+
+function introduce(role) {
+    return `Name is ${this.name} and role is ${role}`;
+};
+
+let obj = { name : "Priya" };
+let occupation = "Human Resource";
+
+console.log(introduce.call(obj, occupation));           // Name is Priya and role is Human Resource
