@@ -79,3 +79,14 @@ Noted the key limitation: unlike normal functions, new Function() doesn't form c
 **Task 8 : Scheduling: setTimeout and setInterval**
 
 Explored JavaScript's native scheduling methods to create a dynamic countdown timer using setInterval(). Highlighted the critical distinction between a timer's execution reference—which must be a named function to be explicitly callable—and the timer's tracking ID, which is a primitive value used solely by clearInterval() to stop execution. Fixed an initial timing configuration error by adjusting the delay from 5000ms (5 seconds per tick) to 1000ms (1 second per tick) to ensure accurate real-time updates. Additionally, demonstrated how to bypass single-return syntax limitations by using console.log() statements to output multiple progressive conditions within the interval loops.
+
+
+**Task 9 : Decorators and forwarding, call/apply**
+
+Built a caching decorator: `cachingDecorator(func)` creates a Map once
+and returns a wrapper that checks the Map on every call, returning the
+stored result on a hit and only calling the original function on a
+miss. Verified it by calling slowSquare(4) twice and confirming
+"Calculating..." printed only once for it. Also used `func.call(obj, arg)`
+to run a plain function with an explicitly chosen `this`, passing its
+arguments one by one after the context.
