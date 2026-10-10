@@ -197,3 +197,34 @@ let obj = { name : "Priya" };
 let occupation = "Human Resource";
 
 console.log(introduce.call(obj, occupation));           // Name is Priya and role is Human Resource
+
+
+// Task 10 : Function binding
+
+let reminder = {
+    username: "priya",
+    notify() {
+        console.log(`Hi! my name is ${this.username}`);
+    }
+};
+
+setTimeout(reminder.notify, 1000);
+// Hi! my name is undefined
+// setTimeout receives only the function itself, without "reminder." in front of it.
+// When it runs the function later, no object is calling it, so this is lost
+// (same problem as introduceAlone() in 4.4). this.username has nothing to read.
+
+let bound = reminder.notify.bind(reminder);
+
+setTimeout(bound, 1000);
+// Hi! my name is priya
+// bind returns a new function with this permanently locked to reminder.
+
+function applyDiscount(discountPercent, price) {
+    return price - (price * discountPercent / 100);
+}
+
+let tenPercentOff = applyDiscount.bind(null, 10);
+// partial application: discountPercent is fixed to 10, null because this isn't used
+
+console.log(tenPercentOff(500)); // 450
