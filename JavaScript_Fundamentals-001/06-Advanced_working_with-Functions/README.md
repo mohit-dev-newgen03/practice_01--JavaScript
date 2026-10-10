@@ -90,3 +90,14 @@ miss. Verified it by calling slowSquare(4) twice and confirming
 "Calculating..." printed only once for it. Also used `func.call(obj, arg)`
 to run a plain function with an explicitly chosen `this`, passing its
 arguments one by one after the context.
+
+
+**Task 10 : Function binding**
+
+Showed that passing an object method directly to setTimeout loses `this`
+(no object calls it later, so this.username is undefined), and fixed it
+with `bind`, which returns a new function with `this` permanently locked.
+Also used `bind` for partial application, fixing the first argument of
+applyDiscount to 10 to create a reusable tenPercentOff function.
+Fixed a bug where the function returned the discount amount (50)
+instead of the discounted price (450).
