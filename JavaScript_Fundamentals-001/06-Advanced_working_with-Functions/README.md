@@ -101,3 +101,14 @@ Also used `bind` for partial application, fixing the first argument of
 applyDiscount to 10 to create a reusable tenPercentOff function.
 Fixed a bug where the function returned the discount amount (50)
 instead of the discounted price (450).
+
+
+**Task 11 : Arrow functions revisited**
+
+Showed that arrow functions have no `this` of their own and borrow it from
+the surrounding code. An arrow callback inside a regular method
+(remindLater) correctly uses the object's `this` through setTimeout, with
+no bind needed. An arrow function used directly as an object method
+(badReminder) fails with undefined, because an object literal does not
+create a `this`, so the arrow looks outward to the top-level this.
+Rule: regular syntax for object methods, arrows for callbacks inside them.
