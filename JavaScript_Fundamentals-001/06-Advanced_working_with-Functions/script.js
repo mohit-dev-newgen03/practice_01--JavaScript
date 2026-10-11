@@ -228,3 +228,30 @@ let tenPercentOff = applyDiscount.bind(null, 10);
 // partial application: discountPercent is fixed to 10, null because this isn't used
 
 console.log(tenPercentOff(500)); // 450
+
+
+// Task 11 : Arrow functions revisited
+
+let cart = {
+    owner: "Priya",
+
+    // Regular method: called as cart.remindLater(), so this = cart
+    remindLater() {
+        setTimeout(() => {
+            // The arrow function has no this of its own. It looks outward to
+            // remindLater's this, which is cart, so this.owner works.
+            console.log(`Hi! owner's name is ${this.owner}`);
+        }, 1000);
+    },
+
+    // Arrow function as a method: the wrong choice
+    badReminder: () => {
+        // The { } of an object literal does not create a this. The arrow looks
+        // outward to the top-level this (window in a browser, {} in Node),
+        // which has no owner property, so this prints undefined.
+        console.log(`Hi! owner's name is ${this.owner}`);
+    }
+};
+
+cart.remindLater(); // Hi! owner's name is Priya (after 1 second)
+cart.badReminder(); // Hi! owner's name is undefined
